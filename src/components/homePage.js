@@ -5,12 +5,18 @@ import HomeOptions from '../components/homeOptions.js';
 
 function HomePage() {
 
-  const [numberOfTeams, setNumberOfTeams] = useState(2);   
+  const [teams, setTeams] = useState(['','', '', '']);
+  const [randomizeSeeds, setRandomizeSeeds] = useState(true);   
 
   return (
     <div className="App">
       <h6 id="page-title">Tournament bracket generator</h6>
-      <HomeOptions/>
+        <HomeOptions
+          teams={teams}
+          setTeams={setTeams}
+          randomizeSeeds={randomizeSeeds}
+          setRandomizeSeeds={setRandomizeSeeds}
+        />
     </div>
   );
 }

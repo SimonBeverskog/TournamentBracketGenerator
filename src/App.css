@@ -2,6 +2,8 @@
   text-align: center;
   height: 100vh;
   width: 100vw;
+  overflow-x: hidden;
+  background-color: hsla(240, 31%, 25%, 1);
 }
 
 .App-logo {
